@@ -1,6 +1,6 @@
 Data-Gen
 ==============
-a Data Generator for Project Riri to simulate hardware inputs (very much a WIP).
+a Data Generator for Project Riri to simulate hardware inputs.
 
 
 ###Classes:
@@ -25,12 +25,4 @@ and a tickRate (in milliseconds). Tickrate indicates interval to return data at 
  * return type = string ( note: should probably be reconverted / read in as an int )
 
 ##### pulse
- * todo.. still not really sure what this should be returning.
- 
-
-###"gotchas":
-
- * currently not threaded. I didnt see any performance decrease in testing but something to keep in mind.
- * There's no error handling if the app reaches the end of the brainwave txt file. should probably add a way to move on to other files but meh.
- * pulse needs to be added / finished
- * need more / better ways to access and manipulate the data from the input objects.
+ * similar to Pressure / flex, but returns a pulse BPM between 60-80.
